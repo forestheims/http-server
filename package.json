@@ -1,0 +1,25 @@
+{
+  "name": "tcp-http-template",
+  "version": "0.1.0",
+  "description": "Template for creating an HTTP server from a TCP socket.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon -I",
+    "//": "Start Node with this experimental flag to make Jest work.",
+    "//": "See https://github.com/facebook/jest/issues/9430",
+    "//": "See also https://jestjs.io/docs/ecmascript-modules",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "29.0.3",
+    "nodemon": "2.0.19",
+    "supertest": "6.2.4"
+  },
+  "dependencies": {
+    "chalk": "5.0.1",
+    "dotenv": "16.0.2"
+  }
+}
